@@ -37,6 +37,7 @@
 >   - 무분별한 DirtyChecking은 피하자
 >   - Querydsl.update 호출
 >     - 하이버네이트 캐시는 일괄 업데이트시 캐시 갱신이 안되서 Cache Eviction이 필요하다. 
+>   - bulk Insert 시 batch, nativeQuery를 이용하는게 성능에 더 유리하다.
 
 ```kotlin
 import java.beans.Expression
