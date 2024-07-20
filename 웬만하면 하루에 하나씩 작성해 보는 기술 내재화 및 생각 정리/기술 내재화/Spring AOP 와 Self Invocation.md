@@ -45,7 +45,6 @@
 >     getUserName()이 트랜잭션이 적용된 상태이기에 영속성 컨텍스트에 존재하고 1차 캐시에 보관되어야 할것이라고 기대했지만
 >     실제론 em.contains를 확인해보면 false가 나옵니다.
 > 
-> 
 >   - 원인
 >     - 스프링 AOP의 동작방식이 Spring AOP는 JDK Dynamic Proxy 또는 CGLIB Proxy를 사용하는데
 >       실제로 호출되는 객체는 Proxy이기 떄문에 내부에서 다른 메서드를 직접 호출 시 Proxy를 거치지 않고
