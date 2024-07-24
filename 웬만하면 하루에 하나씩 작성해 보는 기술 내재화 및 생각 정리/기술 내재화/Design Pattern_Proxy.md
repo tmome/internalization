@@ -32,7 +32,7 @@ class RealImage(private val fileName: String) : Iamge {
      * Proxy 호출
      * 참고 
      * lateinit : 초기화 이후에 계속하여 값이 바뀔 수 있을 때
-    *  by lazy : 초기화 이후에 읽기 전용 값으로 사용할 때
+     * by lazy : 초기화 이후에 읽기 전용 값으로 사용할 때
      */
     class ProxyImage(private val fileName: String) : Image {
         private var realImage: RealImage by lazy { realImage(fileName)}
