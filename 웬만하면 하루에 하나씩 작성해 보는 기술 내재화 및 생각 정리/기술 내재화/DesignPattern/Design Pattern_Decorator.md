@@ -22,7 +22,7 @@ class BasicCoffee: Coffee {
     }
     
     override fun description(): String {
-        return "BasicCoffee"
+        return "SimpleCoffee"
     }
 }
 
